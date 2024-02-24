@@ -1,0 +1,171 @@
+/* Global Css */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+}
+
+.global_btn {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+
+.global_section {
+    padding: 3rem 0;
+}
+
+.global_heading {
+    font-size: 55px;
+    text-align: center;
+    margin: 8px;
+}
+
+.global_head_p {
+    text-align: center;
+    color: #4e4e4e;
+}
+
+/* This is Header  */
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+}
+
+
+.main_menu ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+/* First Section */
+
+
+.first_section {
+    background-image: url('./images/man.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.first_section p {
+    font-size: 2rem;
+}
+
+.first_section h2 {
+    font-size: 5rem;
+    margin: 10px 0;
+}
+
+/* About me section */
+
+.about_main_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+
+.about_sub_div1 img {
+    width: 300px;
+    height: 260px;
+    margin: 0 30px;
+}
+
+.about_sub_div2  {
+    width: 500px;
+}
+
+.about_sub_div2 h2 {
+    font-size: 33px;
+}
+
+.about_sub_div2 p {
+    color: #4e4e4e;
+    margin: 15px 0px;
+}
+
+/* This is service area  */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-single-item {
+    padding: 50px;
+    text-align: center;
+}
+
+.grid-single-item h2{
+    margin: 15px 0;
+}
+
+.grid-single-item p{
+    color: #4e4e4e;
+}
+
+
+.custom_icon {
+    font-size: 60px;
+}
+
+/* work section  */
+.single-img {
+    width: 300px;
+} 
+
+/* Testimonial section  */
+
+
+.testimonial_p {
+    color: black !important;
+}
+
+/* Contact Me Section  */
+
+form {
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+
+form input {
+    width: 252px;
+    margin-bottom: 5px;
+}
+
+.submit_btn {
+    height: 25px;
+    width: 150px;
+    background-color: black;
+    color: white;
+}
+
+
+/* This is footer  */
+
+footer {
+    background-color: black;
+    color: white;
+    height: 3rem;
+    text-align: center;
+}
+
+p {
+    padding-top: 15px ;
+}
