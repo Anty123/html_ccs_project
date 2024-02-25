@@ -30,7 +30,7 @@
 }
 
 /* This is Header  */
-
+/*
 header {
     background-color: black;
     color: white;
@@ -41,11 +41,55 @@ header {
 }
 
 
-.main_menu ul li {
+
+.main ul li {
     display: inline;
     margin-right: 10px;
 }
 
+*/
+
+.nav-bar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.open_menu, .close_menu{
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open_menu {
+    top: 40px;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close_menu{
+    top: 20px;
+    right: 20px;
+}
+
+#check {display: none;}
 
 /* First Section */
 
@@ -168,4 +212,28 @@ footer {
 
 p {
     padding-top: 15px ;
+}
+
+
+/* Mobile Large  */
+
+@media only screen and (max-width: 600px){
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: black;
+        z-index: 100;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px}
+    .open_menu, .close_menu {display: block;}
+
+     #check:checked ~ .menu{right: 0;}
+
 }
